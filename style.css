@@ -108,6 +108,40 @@ h3{ font-size: var(--fs-h3)}
     height: 70vh;
 }
 
+
+.intro p {
+	animation: fadeIn 1s ease-in both;
+}
+
+.intro h1 {
+	animation: fadeIn 1s ease-in both;
+}
+
+.intro h1:nth-child(1) {
+    animation-delay: 0s ;
+}
+
+.intro p:nth-child(2) {
+	animation-delay: 1s;
+}
+.intro p:nth-child(3) {
+	animation-delay: 2s;
+}
+.intro p:nth-child(4) {
+	animation-delay: 3s;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -100%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
 .inner-intro {
     /* background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url("Images/grant-lemons-jTCLppdwSEc-unsplash.jpg"); */
     display: flex;
@@ -243,8 +277,23 @@ header {
 }
 
 .logo {
-    max-width: 50px;
-    margin: 1em;
+    /* max-width: 150px; */
+    margin: .2em;
+    display: flex;
+    align-items: center;
+}
+
+.logo :nth-child(1) {
+    /* background-color: lightpink; */
+    width: 120px;
+    /* max-width: 200px; */
+}
+.logo :nth-child(2) {
+    width: 200px;
+    /* width: 100px;
+    height: 50%; */
+    /* align-self: center; */
+    /* background-color: lightgrey; */
 }
 
 .nav-toggle {
