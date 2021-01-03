@@ -285,7 +285,9 @@ header {
 
 .logo :nth-child(1) {
     /* background-color: lightpink; */
-    width: 120px;
+    width: 40px;
+    margin-left: 1em;
+    margin-right: 1em;
     /* max-width: 200px; */
 }
 .logo :nth-child(2) {
@@ -294,6 +296,23 @@ header {
     height: 50%; */
     /* align-self: center; */
     /* background-color: lightgrey; */
+}
+
+@media (max-width: 400px) {
+    .logo :nth-child(1) {
+        /* background-color: lightpink; */
+        width: 25px;
+        margin-left: 1em;
+        margin-right: 1em;
+        /* max-width: 200px; */
+    }
+    .logo :nth-child(2) {
+        width: 100px;
+        /* width: 100px;
+        height: 50%; */
+        /* align-self: center; */
+        /* background-color: lightgrey; */
+    }
 }
 
 .nav-toggle {
@@ -310,6 +329,7 @@ header {
     padding: 0;
 }
 
+
 .nav__link {
     color: var(--clr-dark);
     font-size: var(--fs-h3);
@@ -318,11 +338,9 @@ header {
     margin-right: 1em;
 }
 
-
-.nav_link:hover { 
+.nav__link:hover {
     color: var(--clr-accent);
 }
-
 
 /* Buttons */
 .btn {
@@ -339,7 +357,7 @@ header {
     transition: transform 200ms ease-in-out;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
 
     /* Buttons */
     .btn {
@@ -467,6 +485,11 @@ header {
 .leistungen h2 {
     text-align: center;
 }
+/* 
+.leistungen h1 {
+    background-color: lightgray;
+} */
+
 
 .card > img {
     width: 100%;
@@ -477,6 +500,13 @@ header {
     grid-gap: 1em;
     max-width: 1200px; */
 }
+
+/* .btn {
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+
 /* small cards ------------------------------------------------------------------------------------------------------------------------- */
 .small-cards {
     background-color: lightgrey;
@@ -610,3 +640,4 @@ header {
     flex-wrap: wrap;
     padding: 0;
 }
+
